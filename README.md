@@ -1,7 +1,7 @@
 4 Top quark trigger study git README
 ====================================
   
-***Chang whan Jung, last edit 2019-08-20 KST 18:22***
+***Chang whan Jung, last edit 2019-08-20 KST 18:27***
  
 
 < List of Files >
@@ -10,12 +10,12 @@
 /Data/Trigger Efficiency/trig_eff_2016v4.C  
 /Data/Trigger Efficiency/trig_eff_2017v4.C  
 /Data/Trigger EFficiency/trig_eff_2018v4_Summation.C  
-/Data/Trigger Efficiency/trig_eff_2016v4_Data_Nb_Njets.C  
-/Data/Trigger Efficiency/trig_eff_2017v4_Data_Nb_Njets.C  
-/Data/Trigger Efficiency/trig_eff_2018v4_Data_Nb_Njets.C  
-/Data/Trigger Efficiency/trig_eff_2016v4_Data_Nb_Njets_backup.C  
-/Data/Trigger Efficiency/trig_eff_2017v4_Data_Nb_Njets_backup.C  
-/Data/Trigger Efficiency/trig_eff_2018v4_Data_Nb_Njets_backup.C  
+/Data/Trigger Efficiency 2D/trig_eff_2016v4_Data_Nb_Njets.C  
+/Data/Trigger Efficiency 2D/trig_eff_2017v4_Data_Nb_Njets.C  
+/Data/Trigger Efficiency 2D/trig_eff_2018v4_Data_Nb_Njets.C  
+/Data/Trigger Efficiency 2D/trig_eff_2016v4_Data_Nb_Njets_backup.C  
+/Data/Trigger Efficiency 2D/trig_eff_2017v4_Data_Nb_Njets_backup.C  
+/Data/Trigger Efficiency 2D/trig_eff_2018v4_Data_Nb_Njets_backup.C  
    
 /MC/Contamination Ratio/CountingEntries_QCD.C
 /MC/Contamination Ratio/CountingEntries_TT.C
