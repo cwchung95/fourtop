@@ -43,7 +43,7 @@
 < How to Use Data files >
 -------------------------
   
-Use the ```"skim_trig_8jet_/*year*/v4_data_SingleMuon_*.root"``` Dataset.  
+Use the ```"skim_trig_8jet_***year***v4_data_SingleMuon_*.root"``` Dataset.  
   
 All datasets can be found in **/home/cwchung95/exampleV/skim_trig/public** folder.  
   
@@ -53,7 +53,7 @@ if you don't have, then you should skim your datasets.
 < How to Use MC files >  
 -----------------------  
     
-Use the ```"skim_trig_8jet_/*year*/v4_data_*.root"``` Dataset.  
+Use the ```"skim_trig_8jet_***year***v4_data_*.root"``` Dataset.  
   
 All datasets can be found in **/home/cwchung95/exampleV/skim_trig/public** folder.  
   
