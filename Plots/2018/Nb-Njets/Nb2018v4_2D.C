@@ -1,16 +1,16 @@
-void Nb2018v4_2()
+void Nb2018v4_2D()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Aug 19 17:48:13 2019) by ROOT version 6.17/01
+//=========  (Tue Aug 20 14:33:35 2019) by ROOT version 6.17/01
    TCanvas *c = new TCanvas("c", "c",0,23,1000,800);
-   c->Range(2.25,7.125,4.75,10.875);
+   c->Range(2.25,6.875,4.75,13.125);
    c->SetFillColor(0);
    c->SetBorderMode(0);
    c->SetBorderSize(2);
    c->SetFrameBorderMode(0);
    c->SetFrameBorderMode(0);
    
-   TH2D *h1_eff = new TH2D("h1_eff","Efficiency",2,2.5,4.5,3,7.5,10.5);
+   TH2D *h1_eff = new TH2D("h1_eff","Efficiency",2,2.5,4.5,5,7.5,12.5);
    h1_eff->SetBinContent(0,0.6324582);
    h1_eff->SetBinContent(1,1);
    h1_eff->SetBinContent(2,0.8);
@@ -20,9 +20,15 @@ void Nb2018v4_2()
    h1_eff->SetBinContent(8,0.6966171);
    h1_eff->SetBinContent(9,0.9584871);
    h1_eff->SetBinContent(10,0.9745763);
-   h1_eff->SetBinContent(12,0.7162379);
-   h1_eff->SetBinContent(13,0.9539615);
-   h1_eff->SetBinContent(14,0.9960159);
+   h1_eff->SetBinContent(12,0.7062529);
+   h1_eff->SetBinContent(13,0.957483);
+   h1_eff->SetBinContent(14,1);
+   h1_eff->SetBinContent(16,0.7391941);
+   h1_eff->SetBinContent(17,0.9579832);
+   h1_eff->SetBinContent(18,0.9846154);
+   h1_eff->SetBinContent(20,0.7363796);
+   h1_eff->SetBinContent(21,0.9259259);
+   h1_eff->SetBinContent(22,1);
    h1_eff->SetBinError(0,0.02355387);
    h1_eff->SetBinError(2,0.1788854);
    h1_eff->SetBinError(4,0.004521923);
@@ -31,9 +37,13 @@ void Nb2018v4_2()
    h1_eff->SetBinError(8,0.004771686);
    h1_eff->SetBinError(9,0.00605857);
    h1_eff->SetBinError(10,0.01024641);
-   h1_eff->SetBinError(12,0.005716242);
-   h1_eff->SetBinError(13,0.006857294);
-   h1_eff->SetBinError(14,0.003976119);
+   h1_eff->SetBinError(12,0.006957302);
+   h1_eff->SetBinError(13,0.008320668);
+   h1_eff->SetBinError(16,0.01188425);
+   h1_eff->SetBinError(17,0.01300475);
+   h1_eff->SetBinError(18,0.01526581);
+   h1_eff->SetBinError(20,0.01847074);
+   h1_eff->SetBinError(21,0.02520051);
    h1_eff->SetMinimum(0);
    h1_eff->SetMaximum(1.2);
    h1_eff->SetEntries(30660);
@@ -60,7 +70,7 @@ void Nb2018v4_2()
    h1_eff->SetContourLevel(18,1.08);
    h1_eff->SetContourLevel(19,1.14);
    
-   TPaletteAxis *palette = new TPaletteAxis(4.5125,7.5,4.625,10.5,h1_eff);
+   TPaletteAxis *palette = new TPaletteAxis(4.5125,7.5,4.625,12.5,h1_eff);
    palette->SetLabelColor(1);
    palette->SetLabelFont(42);
    palette->SetLabelOffset(0.005);

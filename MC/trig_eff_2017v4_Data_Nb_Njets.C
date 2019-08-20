@@ -52,8 +52,8 @@ void trig_eff_2017v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 			label="Njets";
 			var[i] = "Sum$(Jet_jetId>1 && Jet_pt>30 && abs(Jet_eta)<2.4)";
 			begin[i] = 7.5;
-			end[i] = 10.5;
-			nbins[i] = 3;
+			end[i] = 12.5;
+			nbins[i] = 5;
 			deno[i] = indeno + nbdeno;
 		}
 		// Nb //
@@ -91,8 +91,6 @@ void trig_eff_2017v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 	Double_t effmax = h1_eff->GetMaximum();
 
 	TCanvas *c = new TCanvas("c", "c", 1000, 800);
-//	c->Divide(3,1);
-//	c->cd(1);
 	//c->DrawFrame(begin,0,end,1.2);                     // Setting the canvas.
 
 	h1_eff->SetTitle("Efficiency"); 
@@ -117,12 +115,8 @@ void trig_eff_2017v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 
 	gStyle->SetPaintTextFormat("0.2f");
 	h1_eff->Draw("COLZ text e");
-/*
-	c->cd(2);
-	h2_den->Draw("colz text");
-	c->cd(3);
-	h2_num->Draw("colz text");
-*/	/*	TGaxis *ax1 = new TGaxis(gPad->GetUxmax(),0,gPad->GetUxmax(),1.2,0,denmax*3,10510,"+L");//gPad->GetUxmax()
+
+	/*	TGaxis *ax1 = new TGaxis(gPad->GetUxmax(),0,gPad->GetUxmax(),1.2,0,denmax*3,10510,"+L");//gPad->GetUxmax()
 		ax1->SetLabelSize(0.03);
 		ax1->SetLabelFont(40);                             // Setting Label's Font and Size.
 
@@ -192,7 +186,7 @@ void trig_eff_2017v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 
 	l1->Draw("same");
 	*/
-	TString outfile = xlabel+"2017v4_2";
+	TString outfile = xlabel+"2017v4_2D";
 	c->Print(outfile+".pdf"); 
 	c->Print(outfile+".C");                                 // Making Output File.
 

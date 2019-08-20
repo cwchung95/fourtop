@@ -45,8 +45,8 @@ void trig_eff_2016v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 			label="Njets";
 			var[i] = "Sum$(Jet_pt>30 && Jet_jetId>=1 && abs(Jet_eta)<2.4)";
 			begin[i] = 7.5;
-			end[i] = 10.5;
-			nbins[i] = 3;
+			end[i] = 12.5;
+			nbins[i] = 5;
 			deno[i] = indeno + nbdeno;
 		}
 		// Nb //
@@ -70,7 +70,7 @@ void trig_eff_2016v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 	TH2D *h2_num = new TH2D("h2_num", "h2_num", nbins[0], begin[0], end[0], nbins[1], begin[1], end[1]);
 
 	
-	ch.Draw(Form("min(%s,%f-0.00001):min(%s,%f-0.00001)>>+h2_den", var[1].Data(), end[1], var[0].Data(), end[0]), "1*("+htdeno+")", "colz text");
+	ch.Draw(Form("min(%s,%f-0.00001):min(%s,%f-0.00001)>>+h2_den", var[1].Data(), end[1], var[0].Data(), end[0]), "1*("+htdeno+")", "goff");
 	ch.Draw(Form("min(%s,%f-0.00001):min(%s,%f-0.00001)>>+h2_num", var[1].Data(), end[1], var[0].Data(), end[0]), "1*(("+htdeno+")&&("+trig+"))", "goff");
 
 	//   *********** Drawing Sequence **********  //
@@ -82,8 +82,6 @@ void trig_eff_2016v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 	Double_t effmax = h1_eff->GetMaximum();
 
 	TCanvas *c = new TCanvas("c", "c", 1000, 800);
-//	c->Divide(3,1);
-//	c->cd(1);
 	//c->DrawFrame(begin,0,end,1.2);                     // Setting the canvas.
 
 	h1_eff->SetTitle("Efficiency"); 
@@ -108,6 +106,8 @@ void trig_eff_2016v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 
 	gStyle->SetPaintTextFormat("0.2f");
 	h1_eff->Draw("COLZ text e");
+
+
 /*
 	c->cd(2);
 	h2_den->Draw("colz text");
@@ -183,7 +183,7 @@ void trig_eff_2016v4_Data_Nb_Njets(TString var1="nb",TString var2="njets")
 
 	l1->Draw("same");
 	*/
-	TString outfile = xlabel+"2016v4_2";
+	TString outfile = xlabel+"2016v4_2D";
 	c->Print(outfile+".pdf"); 
 	c->Print(outfile+".C");                                 // Making Output File.
 

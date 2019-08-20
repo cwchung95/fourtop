@@ -1,37 +1,51 @@
-void Nb2016v4_2()
+void Nb2017v4_2D()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Aug 19 17:49:59 2019) by ROOT version 6.17/01
+//=========  (Tue Aug 20 14:34:49 2019) by ROOT version 6.17/01
    TCanvas *c = new TCanvas("c", "c",0,23,1000,800);
-   c->Range(2.25,7.125,4.75,10.875);
+   c->Range(2.25,6.875,4.75,13.125);
    c->SetFillColor(0);
    c->SetBorderMode(0);
    c->SetBorderSize(2);
    c->SetFrameBorderMode(0);
    c->SetFrameBorderMode(0);
    
-   TH2D *h1_eff = new TH2D("h1_eff","Efficiency",2,2.5,4.5,3,7.5,10.5);
-   h1_eff->SetBinContent(0,0.8012048);
-   h1_eff->SetBinContent(1,1);
-   h1_eff->SetBinContent(4,0.8759602);
-   h1_eff->SetBinContent(5,0.9913793);
-   h1_eff->SetBinContent(6,1);
-   h1_eff->SetBinContent(8,0.8930417);
-   h1_eff->SetBinContent(9,0.9859155);
-   h1_eff->SetBinContent(10,0.9777778);
-   h1_eff->SetBinContent(12,0.8999218);
-   h1_eff->SetBinContent(13,1);
-   h1_eff->SetBinContent(14,1);
-   h1_eff->SetBinError(0,0.03097567);
-   h1_eff->SetBinError(4,0.005559812);
-   h1_eff->SetBinError(5,0.006069416);
-   h1_eff->SetBinError(8,0.006162743);
-   h1_eff->SetBinError(9,0.008074225);
-   h1_eff->SetBinError(10,0.02197392);
-   h1_eff->SetBinError(12,0.008391446);
+   TH2D *h1_eff = new TH2D("h1_eff","Efficiency",2,2.5,4.5,5,7.5,12.5);
+   h1_eff->SetBinContent(0,0.6012658);
+   h1_eff->SetBinContent(1,0.875);
+   h1_eff->SetBinContent(4,0.6128683);
+   h1_eff->SetBinContent(5,0.9056047);
+   h1_eff->SetBinContent(6,0.9807692);
+   h1_eff->SetBinContent(8,0.6308685);
+   h1_eff->SetBinContent(9,0.9246988);
+   h1_eff->SetBinContent(10,0.9818182);
+   h1_eff->SetBinContent(12,0.6440559);
+   h1_eff->SetBinContent(13,0.9621212);
+   h1_eff->SetBinContent(14,0.9677419);
+   h1_eff->SetBinContent(16,0.6774194);
+   h1_eff->SetBinContent(17,0.9215686);
+   h1_eff->SetBinContent(18,1);
+   h1_eff->SetBinContent(20,0.7474747);
+   h1_eff->SetBinContent(21,0.8461538);
+   h1_eff->SetBinContent(22,1);
+   h1_eff->SetBinError(0,0.0389535);
+   h1_eff->SetBinError(1,0.1169268);
+   h1_eff->SetBinError(4,0.007169354);
+   h1_eff->SetBinError(5,0.01587979);
+   h1_eff->SetBinError(6,0.01904496);
+   h1_eff->SetBinError(8,0.008266281);
+   h1_eff->SetBinError(9,0.01448212);
+   h1_eff->SetBinError(10,0.01801577);
+   h1_eff->SetBinError(12,0.01266149);
+   h1_eff->SetBinError(13,0.01661598);
+   h1_eff->SetBinError(14,0.03173351);
+   h1_eff->SetBinError(16,0.02328603);
+   h1_eff->SetBinError(17,0.03764642);
+   h1_eff->SetBinError(20,0.04366496);
+   h1_eff->SetBinError(21,0.1000683);
    h1_eff->SetMinimum(0);
    h1_eff->SetMaximum(1.2);
-   h1_eff->SetEntries(8171);
+   h1_eff->SetEntries(11148);
    h1_eff->SetStats(0);
    h1_eff->SetContour(20);
    h1_eff->SetContourLevel(0,0);
@@ -55,7 +69,7 @@ void Nb2016v4_2()
    h1_eff->SetContourLevel(18,1.08);
    h1_eff->SetContourLevel(19,1.14);
    
-   TPaletteAxis *palette = new TPaletteAxis(4.5125,7.5,4.625,10.5,h1_eff);
+   TPaletteAxis *palette = new TPaletteAxis(4.5125,7.5,4.625,12.5,h1_eff);
    palette->SetLabelColor(1);
    palette->SetLabelFont(42);
    palette->SetLabelOffset(0.005);
